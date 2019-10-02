@@ -64,7 +64,7 @@ public class ServerTests {
     URL url = new URL("http://localhost:8080");
     URLConnection con = url.openConnection();
 
-    sendRequest("", "", "GET");
+    sendRequest("", "Test", "POST");
 
     LineNumberReader reader = new LineNumberReader(new InputStreamReader(con.getInputStream()));
 
@@ -72,7 +72,7 @@ public class ServerTests {
       reader.readLine();
     }
 
-    Assert.assertEquals("Hello Dominic - the time on the server is 12 AM on Monday", reader.readLine());
+    Assert.assertEquals("Hello Dominic, Anton, Long, and Test - the time on the server is 12 AM on Monday", reader.readLine());
   }
 
   @Test
@@ -96,7 +96,7 @@ public class ServerTests {
     URL url = new URL("http://localhost:8080");
     URLConnection con = url.openConnection();
 
-    sendRequest("", "", "GET");
+    sendRequest("", "Long", "DELETE");
 
     LineNumberReader reader = new LineNumberReader(new InputStreamReader(con.getInputStream()));
 
