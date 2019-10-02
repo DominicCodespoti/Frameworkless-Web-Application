@@ -1,10 +1,10 @@
 package ViewTests;
 
+import Model.PersonDatabaseStub;
 import View.Server;
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.LineNumberReader;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -16,7 +16,7 @@ import org.junit.Test;
 
 public class ServerTests {
 
-  private Server testServer = new Server();
+  private Server testServer = new Server(new PersonDatabaseStub());
 
   private void sendRequest(String paramOne, String paramTwo, String requestMethod) throws IOException {
     URL url = new URL("http://localhost:8080/");
@@ -38,18 +38,72 @@ public class ServerTests {
   }
 
   @Before
-  public void initializeServer()  {
+  public void initializeServer() {
     testServer.start();
   }
 
   @Test
-  public void testServerInitializesOnPortCorrectly() throws IOException {
+  public void testServerRespondsToGetRequestWithCorrectData() throws IOException {
     URL url = new URL("http://localhost:8080");
     URLConnection con = url.openConnection();
 
-    BufferedReader reader =
-        new BufferedReader(new InputStreamReader(con.getInputStream()));
+    sendRequest("", "", "GET");
 
-    Assert.assertEquals("Welcome!", reader.readLine());
+    LineNumberReader reader = new LineNumberReader(new InputStreamReader(con.getInputStream()));
+
+    for (int x = 0; x < 13; x++) {
+      reader.readLine();
+    }
+
+    Assert
+        .assertEquals("Hello Dominic, Anton, and Long - the time on the server is 12 AM on Monday", reader.readLine());
+  }
+
+  @Test
+  public void testServerRespondsToPostRequestWithCorrectData() throws IOException {
+    URL url = new URL("http://localhost:8080");
+    URLConnection con = url.openConnection();
+
+    sendRequest("", "", "GET");
+
+    LineNumberReader reader = new LineNumberReader(new InputStreamReader(con.getInputStream()));
+
+    for (int x = 0; x < 13; x++) {
+      reader.readLine();
+    }
+
+    Assert.assertEquals("Hello Dominic - the time on the server is 12 AM on Monday", reader.readLine());
+  }
+
+  @Test
+  public void testServerRespondsToPutRequestWithCorrectData() throws IOException {
+    URL url = new URL("http://localhost:8080");
+    URLConnection con = url.openConnection();
+
+    sendRequest("", "", "GET");
+
+    LineNumberReader reader = new LineNumberReader(new InputStreamReader(con.getInputStream()));
+
+    for (int x = 0; x < 13; x++) {
+      reader.readLine();
+    }
+
+    Assert.assertEquals("Hello Dominic - the time on the server is 12 AM on Monday", reader.readLine());
+  }
+
+  @Test
+  public void testServerRespondsToDeleteRequestWithCorrectData() throws IOException {
+    URL url = new URL("http://localhost:8080");
+    URLConnection con = url.openConnection();
+
+    sendRequest("", "", "GET");
+
+    LineNumberReader reader = new LineNumberReader(new InputStreamReader(con.getInputStream()));
+
+    for (int x = 0; x < 13; x++) {
+      reader.readLine();
+    }
+
+    Assert.assertEquals("Hello Dominic - the time on the server is 12 AM on Monday", reader.readLine());
   }
 }

@@ -1,30 +1,23 @@
 package Model;
 
 import Utilities.RequestValidator;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.time.ZoneId;
-import java.time.ZonedDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
-public class PersonDatabase implements IPersonDatabase{
+public class PersonDatabaseStub implements IPersonDatabase {
 
   private List<String> people = new ArrayList<>();
 
-  public PersonDatabase() throws FileNotFoundException {
+  public PersonDatabaseStub() {
     updateDatabase();
   }
 
   @Override
-  public void updateDatabase() throws FileNotFoundException {
+  public void updateDatabase() {
     people.clear();
-    Scanner currentPerson = new Scanner(new File("persons.txt"));
-    while (currentPerson.hasNext()) {
-      people.add(currentPerson.next());
-    }
+    people.add("Dominic");
+    people.add("Anton");
+    people.add("Long");
   }
 
   @Override
@@ -39,18 +32,11 @@ public class PersonDatabase implements IPersonDatabase{
 
   @Override
   public String getQuery() {
-    ZonedDateTime melbourneTime = ZonedDateTime.now(ZoneId.of("Australia/Sydney"));
-    DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("dd MM yyyy");
-    String melbourneDateFormatted = melbourneTime.format(dateFormat);
-    DateTimeFormatter timeFormat = DateTimeFormatter.ofPattern("hh:mm a");
-    String melbourneTimeFormatted = melbourneTime.format(timeFormat); //todo make new classs for time
-
     if (getPeople().size() == 1) {
-      return "Hello " + getPeople().get(0) + " - the time on the server is " + melbourneTimeFormatted + " on "
-          + melbourneDateFormatted;
+      return "Hello " + getPeople().get(0) + " - the time on the server is 12 AM on Monday";
     } else if (getPeople().size() == 2) {
-      return "Hello " + getPeople().get(0) + " and " + getPeople().get(1) + " - the time on the server is "
-          + melbourneTimeFormatted + " on " + melbourneDateFormatted;
+      return "Hello " + getPeople().get(0) + " and " + getPeople().get(1)
+          + " - the time on the server is 12 AM on Monday";
     } else {
       StringBuilder moreThanThreePeople = new StringBuilder();
       for (int i = 0; i < getPeople().size() - 1; i++) {
@@ -58,7 +44,7 @@ public class PersonDatabase implements IPersonDatabase{
         moreThanThreePeople.append(", ");
       }
       return "Hello " + moreThanThreePeople + "and " + getPeople().get(getPeople().size() - 1)
-          + " - the time on the server is " + melbourneTimeFormatted + " on " + melbourneDateFormatted;
+          + " - the time on the server is 12 AM on Monday";
     }
   }
 

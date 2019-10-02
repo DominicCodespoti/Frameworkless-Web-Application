@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c4dac91-ca07-4fef-8f4c-576e65ce7bfe" name="Default Changelist" comment="" />
+    <list default="true" id="9c4dac91-ca07-4fef-8f4c-576e65ce7bfe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persons.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/IPersonDatabase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/PersonDatabaseStub.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/RequestValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/View/Index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/PersonDatabaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/PersonDatabaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/PersonDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/PersonDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ViewTests/ServerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ViewTests/ServerTests.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -21,40 +46,87 @@
     </projectState>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/View/Server.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="189">
-              <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#342#343#0" expanded="true" />
-                <element signature="e#375#376#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Model/PersonDatabaseStub.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="383">
+              <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/View/Handler.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ViewTests/ServerTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
-              <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+            <state relative-caret-position="473">
+              <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1244#1245#0" expanded="true" />
+                <element signature="e#1272#1273#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ViewTests/ServerTests.java">
+        <entry file="file://$PROJECT_DIR$/Index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
+            <state relative-caret-position="63">
+              <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/View/Server.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1139#1140#0" expanded="true" />
-                <element signature="e#1167#1168#0" expanded="true" />
+                <element signature="e#456#457#0" expanded="true" />
+                <element signature="e#489#490#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Controller/PersonDatabaseController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-439">
+              <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#301#302#0" expanded="true" />
+                <element signature="e#347#348#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/View/Handler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
         </entry>
@@ -64,35 +136,52 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/ServerController.java" />
         <option value="$PROJECT_DIR$/src/main/java/Controller.java" />
-        <option value="$PROJECT_DIR$/src/main/java/View/Server.java" />
         <option value="$PROJECT_DIR$/src/main/java/Model/Person.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/IPersonDatabaseController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Utilities/RequestValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/View/Index.html" />
+        <option value="$PROJECT_DIR$/Index.html" />
+        <option value="$PROJECT_DIR$/src/main/java/Model/IPersonDatabase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Model/PersonDatabase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/PersonDatabaseStub.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/PersonDatabaseController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/View/Server.java" />
         <option value="$PROJECT_DIR$/src/main/java/View/Handler.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/Model/PersonDatabaseStub.java" />
         <option value="$PROJECT_DIR$/src/test/java/ViewTests/ServerTests.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="x" value="30" />
     <option name="y" value="30" />
     <option name="width" value="1620" />
     <option name="height" value="990" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -124,7 +213,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MVC-Web-Server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MVC-Web-Server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MVC-Web-Server" type="b2602c69:ProjectViewProjectNode" />
@@ -151,16 +248,32 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.gradle.running" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Utilities" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Model" />
+      <recent name="Controller" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -174,7 +287,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ServerTests.testServerInitializesOnPortCorrectly">
+  <component name="RunManager" selected="JUnit.ServerTests.testServerRespondsToGetRequestWithCorrectData">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="MVC-Web-Server.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ServerTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -195,25 +315,23 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ServerTests.testServerInitializesOnPortCorrectly" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ViewTests.ServerTests.testServerInitializesOnPortCorrectly&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
+    <configuration name="ServerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MVC-Web-Server.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ViewTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ViewTests" />
+      <option name="MAIN_CLASS_NAME" value="ViewTests.ServerTests" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <dir value="$PROJECT_DIR$/src/test/java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="ServerTests.testServerInitializesOnPortCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MVC-Web-Server.test" />
@@ -233,6 +351,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServerTests.testServerRespondsToGetRequestWithCorrectData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MVC-Web-Server.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ViewTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ViewTests" />
+      <option name="MAIN_CLASS_NAME" value="ViewTests.ServerTests" />
+      <option name="METHOD_NAME" value="testServerRespondsToGetRequestWithCorrectData" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <dir value="$PROJECT_DIR$/src/test/java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -244,15 +380,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Main" />
       <item itemvalue="Gradle.ServerTests" />
-      <item itemvalue="Gradle.ServerTests.testServerInitializesOnPortCorrectly" />
       <item itemvalue="JUnit.ServerTests.testServerInitializesOnPortCorrectly" />
+      <item itemvalue="JUnit.ServerTests.testServerRespondsToGetRequestWithCorrectData" />
+      <item itemvalue="JUnit.ServerTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ServerTests.testServerRespondsToGetRequestWithCorrectData" />
         <item itemvalue="JUnit.ServerTests.testServerInitializesOnPortCorrectly" />
-        <item itemvalue="Gradle.ServerTests.testServerInitializesOnPortCorrectly" />
+        <item itemvalue="JUnit.ServerTests" />
         <item itemvalue="Gradle.ServerTests" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -266,158 +406,96 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569976884369</updated>
-      <workItem from="1569976888294" duration="2476000" />
+      <workItem from="1569976888294" duration="10671000" />
+      <workItem from="1569991879422" duration="5704000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ServerTests - 2019.10.02 at 11h 07m 17s.xml">
-      <configuration name="ServerTests" configurationId="GradleRunConfiguration" />
+    <history-entry file="ServerTests_testServerRespondsToGetRequestWithCorrectData - 2019.10.02 at 16h 10m 00s.xml">
+      <configuration name="ServerTests.testServerRespondsToGetRequestWithCorrectData" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ServerTests - 2019.10.02 at 11h 07m 26s.xml">
-      <configuration name="ServerTests" configurationId="GradleRunConfiguration" />
+    <history-entry file="ServerTests_testServerRespondsToGetRequestWithCorrectData - 2019.10.02 at 16h 10m 10s.xml">
+      <configuration name="ServerTests.testServerRespondsToGetRequestWithCorrectData" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ServerTests - 2019.10.02 at 11h 08m 15s.xml">
-      <configuration name="ServerTests" configurationId="GradleRunConfiguration" />
+    <history-entry file="ServerTests_testServerRespondsToGetRequestWithCorrectData - 2019.10.02 at 16h 10m 32s.xml">
+      <configuration name="ServerTests.testServerRespondsToGetRequestWithCorrectData" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ServerTests_testServerInitializesOnPortCorrectly - 2019.10.02 at 11h 08m 17s.xml">
-      <configuration name="ServerTests.testServerInitializesOnPortCorrectly" configurationId="GradleRunConfiguration" />
+    <history-entry file="ServerTests_testServerRespondsToGetRequestWithCorrectData - 2019.10.02 at 16h 10m 51s.xml">
+      <configuration name="ServerTests.testServerRespondsToGetRequestWithCorrectData" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ServerTests_testServerInitializesOnPortCorrectly - 2019.10.02 at 11h 09m 10s.xml">
-      <configuration name="ServerTests.testServerInitializesOnPortCorrectly" configurationId="JUnit" />
+    <history-entry file="ServerTests_testServerRespondsToGetRequestWithCorrectData - 2019.10.02 at 16h 42m 29s.xml">
+      <configuration name="ServerTests.testServerRespondsToGetRequestWithCorrectData" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ServerTests_testServerInitializesOnPortCorrectly - 2019.10.02 at 11h 09m 50s.xml">
-      <configuration name="ServerTests.testServerInitializesOnPortCorrectly" configurationId="JUnit" />
+    <history-entry file="ServerTests_testServerRespondsToGetRequestWithCorrectData - 2019.10.02 at 16h 42m 46s.xml">
+      <configuration name="ServerTests.testServerRespondsToGetRequestWithCorrectData" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ServerTests_testServerInitializesOnPortCorrectly - 2019.10.02 at 11h 10m 35s.xml">
-      <configuration name="ServerTests.testServerInitializesOnPortCorrectly" configurationId="JUnit" />
+    <history-entry file="ServerTests_testServerRespondsToGetRequestWithCorrectData - 2019.10.02 at 16h 42m 51s.xml">
+      <configuration name="ServerTests.testServerRespondsToGetRequestWithCorrectData" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ServerTests_testServerInitializesOnPortCorrectly - 2019.10.02 at 11h 14m 54s.xml">
-      <configuration name="ServerTests.testServerInitializesOnPortCorrectly" configurationId="JUnit" />
+    <history-entry file="ServerTests_testServerRespondsToGetRequestWithCorrectData - 2019.10.02 at 16h 43m 00s.xml">
+      <configuration name="ServerTests.testServerRespondsToGetRequestWithCorrectData" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ServerTests_testServerInitializesOnPortCorrectly - 2019.10.02 at 11h 18m 24s.xml">
-      <configuration name="ServerTests.testServerInitializesOnPortCorrectly" configurationId="JUnit" />
+    <history-entry file="ServerTests_testServerRespondsToGetRequestWithCorrectData - 2019.10.02 at 17h 09m 41s.xml">
+      <configuration name="ServerTests.testServerRespondsToGetRequestWithCorrectData" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ServerTests_testServerInitializesOnPortCorrectly - 2019.10.02 at 11h 18m 35s.xml">
-      <configuration name="ServerTests.testServerInitializesOnPortCorrectly" configurationId="JUnit" />
+    <history-entry file="ServerTests_testServerRespondsToGetRequestWithCorrectData - 2019.10.02 at 17h 10m 07s.xml">
+      <configuration name="ServerTests.testServerRespondsToGetRequestWithCorrectData" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2476000" />
+    <option name="totallyTimeSpent" value="16375000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="30" y="30" width="1620" height="990" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Capture Tool" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2592122" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25275397" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" />
-      <window_info anchor="bottom" id="Build" weight="0.35227272" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="CheckStyle" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32954547" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32954547" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3014553" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Gradle" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
+      <window_info anchor="bottom" id="Build" order="8" weight="0.35227272" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="CheckStyle" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Gradle" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" selection-start-column="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-          <folding>
-            <element signature="e#83#84#0" expanded="true" />
-            <element signature="e#104#105#0" expanded="true" />
-            <element signature="e#135#136#0" expanded="true" />
-            <element signature="e#161#162#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/PersonDatabase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/PersonDatabaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ViewTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/Person.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/ViewTests.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/ControllerTests/PersonDatabaseControllerTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/View/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#342#343#0" expanded="true" />
-            <element signature="e#375#376#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -428,22 +506,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ViewTests/ServerTests.java">
+    <entry file="file://$PROJECT_DIR$/persons.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Utilities/RequestValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="210">
+          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.4.jdk/Contents/Home/lib/src.zip!/java.base/java/nio/file/Paths.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/View/Index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/IPersonDatabaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="41" lean-forward="true" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/IPersonDatabase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1139#1140#0" expanded="true" />
-            <element signature="e#1167#1168#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/PersonDatabase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1995">
+          <caret line="97" column="11" lean-forward="true" selection-start-line="97" selection-start-column="11" selection-end-line="97" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#796#797#0" expanded="true" />
+            <element signature="e#829#830#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/PersonDatabaseStub.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/View/Handler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        <state relative-caret-position="275">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/PersonDatabaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-439">
+          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#301#302#0" expanded="true" />
+            <element signature="e#347#348#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/View/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#456#457#0" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ViewTests/ServerTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1244#1245#0" expanded="true" />
+            <element signature="e#1272#1273#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
