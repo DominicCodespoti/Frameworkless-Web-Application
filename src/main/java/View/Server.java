@@ -22,4 +22,8 @@ public class Server {
   public void start() {
     this.httpServer.start();
   }
+
+  public void stop() {
+    this.httpServer.stop(0);
+  }
 }
