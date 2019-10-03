@@ -9,15 +9,14 @@ public class PersonDatabaseStub implements IPersonDatabase {
   private List<String> people = new ArrayList<>();
 
   public PersonDatabaseStub() {
-    updateDatabase();
+    people.add("Dominic");
+    people.add("Anton");
+    people.add("Long");
   }
 
   @Override
   public void updateDatabase() {
-    people.clear();
-    people.add("Dominic");
-    people.add("Anton");
-    people.add("Long");
+
   }
 
   @Override

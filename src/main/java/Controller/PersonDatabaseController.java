@@ -2,7 +2,6 @@ package Controller;
 
 import Model.IPersonDatabase;
 import com.sun.net.httpserver.HttpExchange;
-import java.io.FileWriter;
 import java.io.IOException;
 
 public class PersonDatabaseController {
@@ -31,26 +30,14 @@ public class PersonDatabaseController {
         break;
       case "POST":
         output = personDatabase.postQuery(value);
-        saveDatabase();
         break;
       case "PUT":
         output = personDatabase.putQuery(key, value);
-        saveDatabase();
         break;
       case "DELETE":
         output = personDatabase.deleteQuery(value);
-        saveDatabase();
         break;
     }
     return output;
-  }
-
-  public void saveDatabase() throws IOException {
-    FileWriter writer = new FileWriter("persons.txt");
-    for (String currentPerson : personDatabase.getPeople()) {
-      writer.write(currentPerson + System.lineSeparator());
-    }
-    writer.close();
-    personDatabase.updateDatabase();
   }
 }

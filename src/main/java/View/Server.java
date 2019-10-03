@@ -9,9 +9,9 @@ public class Server {
 
   private HttpServer httpServer;
 
-  public Server(IPersonDatabase personDatabase) {
+  public Server(IPersonDatabase personDatabase, int port) {
     try {
-      httpServer = HttpServer.create(new InetSocketAddress(8080), 0);
+      httpServer = HttpServer.create(new InetSocketAddress(port), 0);
       httpServer.createContext("/", new Handler(personDatabase));
       httpServer.setExecutor(null);
     } catch (IOException e) {

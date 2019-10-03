@@ -3,6 +3,8 @@ package Model;
 import Utilities.RequestValidator;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
@@ -63,7 +65,7 @@ public class PersonDatabase implements IPersonDatabase{
   }
 
   @Override
-  public String deleteQuery(String personToDelete) {
+  public String deleteQuery(String personToDelete) throws IOException {
     if (!RequestValidator.doesPersonExist(personToDelete, getPeople())) {
       return "Error, person does not exist in world!";
     }
@@ -74,12 +76,13 @@ public class PersonDatabase implements IPersonDatabase{
     String personBeingDeleted = getPeople().stream().filter(x -> x.equals(personToDelete)).findFirst().orElse(null);
 
     getPeople().remove(personBeingDeleted);
+    saveDatabase();
 
     return "Person deleted successfully!";
   }
 
   @Override
-  public String putQuery(String personToChange, String personToChangeToo) {
+  public String putQuery(String personToChange, String personToChangeToo) throws IOException {
     if (!RequestValidator.doesPersonExist(personToChange, getPeople())) {
       return "Error, person you want to change does not exist in world!";
     }
@@ -91,18 +94,29 @@ public class PersonDatabase implements IPersonDatabase{
 
     getPeople().remove(personBeingDeleted);
     addPerson(personToChangeToo);
+    saveDatabase();
 
     return "Person changed successfully!";
   }
 
   @Override
-  public String postQuery(String personToAdd) {
+  public String postQuery(String personToAdd) throws IOException {
     if (RequestValidator.doesPersonExist(personToAdd, getPeople())) {
       return "Error, persons name already exists!";
     }
 
     addPerson(personToAdd);
+    saveDatabase();
 
     return "Person added successfully!";
+  }
+
+  public void saveDatabase() throws IOException {
+    FileWriter writer = new FileWriter("persons.txt");
+    for (String currentPerson : getPeople()) {
+      writer.write(currentPerson + System.lineSeparator());
+    }
+    writer.close();
+    updateDatabase();
   }
 }

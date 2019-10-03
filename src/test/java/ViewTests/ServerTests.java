@@ -6,10 +6,12 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.LineNumberReader;
 import java.io.OutputStream;
+import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
 import java.nio.charset.StandardCharsets;
+import java.util.concurrent.ThreadLocalRandom;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -17,7 +19,9 @@ import org.junit.Test;
 
 public class ServerTests {
 
-  private Server testServer = new Server(new PersonDatabaseStub());
+  private Server testServer;
+  private URL url;
+  private URLConnection con;
 
   private void sendRequest(String paramOne, String paramTwo, String requestMethod, URLConnection con)
       throws IOException {
@@ -33,84 +37,106 @@ public class ServerTests {
 
     http.setFixedLengthStreamingMode(length);
     http.setRequestProperty("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
+    OutputStream os = http.getOutputStream();
+    OutputStreamWriter osw = new OutputStreamWriter(os, StandardCharsets.UTF_8);
+    osw.write(sj);
+    osw.flush();
+    osw.close();
     http.connect();
-    try (OutputStream os = http.getOutputStream()) {
-      os.write(out);
+  }
+
+  private LineNumberReader createReaderAtMarkupLine() throws IOException {
+    LineNumberReader reader = new LineNumberReader(new InputStreamReader(con.getInputStream()));
+    for (int x = 0; x < 13; x++) {
+      reader.readLine();
     }
+    return reader;
   }
 
   @Before
-  public void initializeServer() {
+  public void initalizeTests() throws IOException {
+    int port = ThreadLocalRandom.current().nextInt(8000, 9000);
+    testServer = new Server(new PersonDatabaseStub(), port);
     testServer.start();
+    url = new URL("http://localhost:" + port);
+    con = url.openConnection();
   }
 
   @After
-  public void cleanUpServer() {
+  public void cleanUpTests() {
     testServer.stop();
   }
 
   @Test
   public void testServerRespondsToGetRequestWithCorrectData() throws IOException {
-    URL url = new URL("http://localhost:8080");
-    URLConnection con = url.openConnection();
-
-    sendRequest("", "", "GET", con);
-
-    LineNumberReader reader = new LineNumberReader(new InputStreamReader(con.getInputStream()));
-
-    for (int x = 0; x < 13; x++) {
-      reader.readLine();
-    }
-
+    LineNumberReader reader = createReaderAtMarkupLine();
     Assert
         .assertEquals("Hello Dominic, Anton, and Long - the time on the server is 12 AM on Monday", reader.readLine());
   }
 
   @Test
   public void testServerRespondsToPostRequestWithCorrectData() throws IOException {
-    URL url = new URL("http://localhost:8080");
-    URLConnection con = url.openConnection();
-
     sendRequest("", "Test", "POST", con);
+    con = url.openConnection();
 
-    LineNumberReader reader = new LineNumberReader(new InputStreamReader(con.getInputStream()));
-
-    for (int x = 0; x < 13; x++) {
-      reader.readLine();
-    }
+    LineNumberReader reader = createReaderAtMarkupLine();
 
     Assert.assertEquals("Hello Dominic, Anton, Long, and Test - the time on the server is 12 AM on Monday",
         reader.readLine());
   }
 
   @Test
+  public void testServerRefusesPostRequestIfNameIsAlreadyPresent() throws IOException {
+    sendRequest("", "Dominic", "POST", con);
+
+    LineNumberReader reader = createReaderAtMarkupLine();
+
+    Assert.assertEquals("Error, persons name already exists!", reader.readLine());
+  }
+
+  @Test
+  public void testServerRefusesPutRequestIfNewNameIsTaken() throws IOException {
+    sendRequest("Anton", "Dominic", "PUT", con);
+
+    LineNumberReader reader = createReaderAtMarkupLine();
+
+    Assert.assertEquals("Error, persons new name already exists!", reader.readLine());
+  }
+
+  @Test
+  public void testServerRefusesPutRequestIfOldNameIsNotPresent() throws IOException {
+    sendRequest("Mitch", "Dominic", "PUT", con);
+
+    LineNumberReader reader = createReaderAtMarkupLine();
+
+    Assert.assertEquals("Error, person you want to change does not exist in world!", reader.readLine());
+  }
+
+  @Test
+  public void testServerRefusesDeleteRequestIfNameIsDominic() throws IOException {
+    sendRequest("", "Dominic", "DELETE", con);
+
+    LineNumberReader reader = createReaderAtMarkupLine();
+
+    Assert.assertEquals("Error, you can't get rid of Dominic!", reader.readLine());
+  }
+
+  @Test
   public void testServerRespondsToPutRequestWithCorrectData() throws IOException {
-    URL url = new URL("http://localhost:8080");
-    URLConnection con = url.openConnection();
-
     sendRequest("Anton", "Max", "PUT", con);
+    con = url.openConnection();
 
-    LineNumberReader reader = new LineNumberReader(new InputStreamReader(con.getInputStream()));
+    LineNumberReader reader = createReaderAtMarkupLine();
 
-    for (int x = 0; x < 13; x++) {
-      reader.readLine();
-    }
-
-    Assert.assertEquals("Hello Dominic, Max, and Long - the time on the server is 12 AM on Monday", reader.readLine());
+    Assert.assertEquals("Hello Dominic, Long, and Max - the time on the server is 12 AM on Monday", reader.readLine());
   }
 
   @Test
   public void testServerRespondsToDeleteRequestWithCorrectData() throws IOException {
-    URL url = new URL("http://localhost:8080");
-    URLConnection con = url.openConnection();
-
     sendRequest("", "Long", "DELETE", con);
+    con = url.openConnection();
 
-    LineNumberReader reader = new LineNumberReader(new InputStreamReader(con.getInputStream()));
-
-    for (int x = 0; x < 13; x++) {
-      reader.readLine();
-    }
+    LineNumberReader reader = createReaderAtMarkupLine();
 
     Assert.assertEquals("Hello Dominic and Anton - the time on the server is 12 AM on Monday", reader.readLine());
   }
