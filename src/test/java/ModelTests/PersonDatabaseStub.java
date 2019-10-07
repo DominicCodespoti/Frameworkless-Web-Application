@@ -27,17 +27,17 @@ public class PersonDatabaseStub implements IPersonDatabase {
   }
 
   @Override
-  public void add(String personToAdd) throws IOException {
+  public void add(String personToAdd) {
     people.add(personToAdd);
   }
 
   @Override
-  public void remove(String personToRemove) throws IOException {
+  public void remove(String personToRemove) {
     people.remove(personToRemove);
   }
 
   @Override
-  public void change(String personToChange, String personToChangeToo) throws IOException {
+  public void change(String personToChange, String personToChangeToo) {
     people.remove(personToChange);
     people.add(personToChangeToo);
   }

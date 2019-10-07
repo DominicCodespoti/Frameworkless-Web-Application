@@ -17,8 +17,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-public class ServerTests {
-
+public class OutputGeneratorTests {
   private Server testServer;
   private URL url;
   private URLConnection con;
@@ -26,7 +25,7 @@ public class ServerTests {
   private void sendRequest(String paramOne, String paramTwo, String requestMethod, URLConnection con)
       throws IOException {
     HttpURLConnection http = (HttpURLConnection) con;
-    http.setRequestMethod(requestMethod); // PUT is another valid option
+    http.setRequestMethod(requestMethod);
     http.setDoOutput(true);
     String sj = paramOne + "=" + paramTwo;
     if (paramOne.isEmpty() && paramTwo.isEmpty()) {
@@ -60,7 +59,7 @@ public class ServerTests {
     int port = ThreadLocalRandom.current().nextInt(8000, 9000);
     testServer = new Server(new PersonDatabaseStub(), port);
     testServer.start();
-    url = new URL("http://localhost/index:" + port);
+    url = new URL("http://localhost:" + port + "/index");
     con = url.openConnection();
   }
 
@@ -70,74 +69,41 @@ public class ServerTests {
   }
 
   @Test
-  public void testServerRespondsToGetRequestWithCorrectData() throws IOException {
+  public void testOutputGeneratesCorrectGreetingForFourPeople() throws IOException {
+    sendRequest("", "Potato", "POST", con);
+    con = url.openConnection();
+
     LineNumberReader reader = createReaderAtMarkupLine();
+
+    Assert.assertEquals("Hello Dominic, Anton, Long, and Potato", reader.readLine().split("-")[0].trim());
+  }
+
+  @Test
+  public void testOutputGeneratesCorrectGreetingForThreePeople() throws IOException {
+    LineNumberReader reader = createReaderAtMarkupLine();
+
     Assert.assertEquals("Hello Dominic, Anton, and Long", reader.readLine().split("-")[0].trim());
   }
 
   @Test
-  public void testServerRespondsToPostRequestWithCorrectData() throws IOException {
-    sendRequest("", "Test", "POST", con);
-    con = url.openConnection();
-
-    LineNumberReader reader = createReaderAtMarkupLine();
-
-    Assert.assertEquals("Hello Dominic, Anton, Long, and Test", reader.readLine().split("-")[0].trim());
-  }
-
-  @Test
-  public void testServerRefusesPostRequestIfNameIsAlreadyPresent() throws IOException {
-    sendRequest("", "Dominic", "POST", con);
-
-    LineNumberReader reader = createReaderAtMarkupLine();
-
-    Assert.assertEquals("Error, the name you are attempting to add is invalid!", reader.readLine().trim());
-  }
-
-  @Test
-  public void testServerRefusesPutRequestIfNewNameIsTaken() throws IOException {
-    sendRequest("Anton", "Dominic", "PUT", con);
-
-    LineNumberReader reader = createReaderAtMarkupLine();
-
-    Assert.assertEquals("Error, the name you are attempting to change too is invalid!", reader.readLine().trim());
-  }
-
-  @Test
-  public void testServerRefusesPutRequestIfOldNameIsNotPresent() throws IOException {
-    sendRequest("Mitch", "Dominic", "PUT", con);
-
-    LineNumberReader reader = createReaderAtMarkupLine();
-
-    Assert.assertEquals("Error, the name you are attempting to change too is invalid!", reader.readLine().trim());
-  }
-
-  @Test
-  public void testServerRefusesDeleteRequestIfNameIsDominic() throws IOException {
-    sendRequest("", "Dominic", "DELETE", con);
-
-    LineNumberReader reader = createReaderAtMarkupLine();
-
-    Assert.assertEquals("Error, the name you are attempting to delete is invalid!", reader.readLine().trim());
-  }
-
-  @Test
-  public void testServerRespondsToPutRequestWithCorrectData() throws IOException {
-    sendRequest("Anton", "Max", "PUT", con);
-    con = url.openConnection();
-
-    LineNumberReader reader = createReaderAtMarkupLine();
-
-    Assert.assertEquals("Hello Dominic, Long, and Max", reader.readLine().split("-")[0].trim());
-  }
-
-  @Test
-  public void testServerRespondsToDeleteRequestWithCorrectData() throws IOException {
+  public void testOutputGeneratesCorrectGreetingForTwoPeople() throws IOException {
     sendRequest("", "Long", "DELETE", con);
     con = url.openConnection();
 
     LineNumberReader reader = createReaderAtMarkupLine();
 
     Assert.assertEquals("Hello Dominic and Anton", reader.readLine().split("-")[0].trim());
+  }
+
+  @Test
+  public void testOutputGeneratesCorrectGreetingForOnePerson() throws IOException {
+    sendRequest("", "Long", "DELETE", con);
+    con = url.openConnection();
+    sendRequest("", "Anton", "DELETE", con);
+    con = url.openConnection();
+
+    LineNumberReader reader = createReaderAtMarkupLine();
+
+    Assert.assertEquals("Hello Dominic", reader.readLine().split("-")[0].trim());
   }
 }
