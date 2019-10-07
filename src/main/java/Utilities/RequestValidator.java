@@ -1,14 +1,18 @@
 package Utilities;
 
-import java.util.List;
+import java.util.Set;
 
 public class RequestValidator {
 
-  public static boolean doesPersonExist(String nameToCheck, List<String> peopleToCheckAgainst) {
-    return (peopleToCheckAgainst.stream().anyMatch(x -> x.equals(nameToCheck)));
+  private static boolean doesPersonExist(String nameToCheck, Set<String> peopleToCheckAgainst) {
+    return peopleToCheckAgainst.stream().anyMatch(x -> x.equals(nameToCheck));
   }
 
   public static boolean isPersonImportant(String nameToCheck) {
-    return (nameToCheck.equals("Dominic"));
+    return (!nameToCheck.equals("Dominic"));
+  }
+
+  public static boolean isValid(String nameToCheck, Set<String> peopleToCheckAgainst) {
+    return !doesPersonExist(nameToCheck, peopleToCheckAgainst) && isPersonImportant(nameToCheck);
   }
 }

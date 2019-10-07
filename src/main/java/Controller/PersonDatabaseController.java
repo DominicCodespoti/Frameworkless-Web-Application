@@ -1,6 +1,8 @@
 package Controller;
 
 import Model.IPersonDatabase;
+import Utilities.RequestValidator;
+import View.OutputGenerator;
 import com.sun.net.httpserver.HttpExchange;
 import java.io.IOException;
 
@@ -15,7 +17,7 @@ public class PersonDatabaseController {
   public String translateRequestToQuery(HttpExchange exchange, String[] arguments) throws IOException {
     String key = "";
     String value = "";
-    String output = "";
+    String output = "Error, request failed!";
 
     if (arguments.length == 2) {
       key = arguments[0];
@@ -26,16 +28,31 @@ public class PersonDatabaseController {
 
     switch (exchange.getRequestMethod()) {
       case "GET":
-        output = personDatabase.getQuery();
+        output = OutputGenerator.getOutputGenerator(personDatabase.getAll());
         break;
       case "POST":
-        output = personDatabase.postQuery(value);
+        if (RequestValidator.isValid(value, personDatabase.getAll())) {
+          personDatabase.add(value);
+          output = OutputGenerator.postOutput();
+        } else {
+          output = OutputGenerator.postErrorOutput();
+        }
         break;
       case "PUT":
-        output = personDatabase.putQuery(key, value);
+        if (RequestValidator.isValid(value, personDatabase.getAll())) {
+          personDatabase.change(key, value);
+          output = OutputGenerator.putOutput();
+        } else {
+          output = OutputGenerator.putErrorOutput();
+        }
         break;
       case "DELETE":
-        output = personDatabase.deleteQuery(value);
+        if (RequestValidator.isPersonImportant(value)) {
+          personDatabase.remove(value);
+          output = OutputGenerator.deleteOutput();
+        } else {
+          output = OutputGenerator.deleteErrorOutput();
+        }
         break;
     }
     return output;

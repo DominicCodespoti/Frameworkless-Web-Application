@@ -24,10 +24,6 @@ public class Handler implements HttpHandler {
     byte[] bytes = exchange.getRequestBody().readAllBytes();
     String[] keyValue = new String(bytes).split("=");
 
-    //View takes paramaters to display, formats it, and updats the html accordingly, and returns it
-    //Controller takes information from view, IE, user to delete, and passes it to model and the request type, it also controls output
-    //Model holds data and performs business logic
-
     String output = readString(Paths.get("Index.html"));
     String response = personDatabaseController.translateRequestToQuery(exchange, keyValue);
 

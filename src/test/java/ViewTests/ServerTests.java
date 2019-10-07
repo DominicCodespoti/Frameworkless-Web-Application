@@ -1,6 +1,6 @@
 package ViewTests;
 
-import Model.PersonDatabaseStub;
+import ModelTests.PersonDatabaseStub;
 import View.Server;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -31,6 +31,8 @@ public class ServerTests {
     String sj = paramOne + "=" + paramTwo;
     if (paramOne.isEmpty() && paramTwo.isEmpty()) {
       sj = "";
+    } else if (paramOne.isEmpty()) {
+      sj = sj.split("=")[1];
     }
     byte[] out = sj.getBytes(StandardCharsets.UTF_8);
     int length = out.length;
@@ -70,8 +72,7 @@ public class ServerTests {
   @Test
   public void testServerRespondsToGetRequestWithCorrectData() throws IOException {
     LineNumberReader reader = createReaderAtMarkupLine();
-    Assert
-        .assertEquals("Hello Dominic, Anton, and Long - the time on the server is 12 AM on Monday", reader.readLine());
+    Assert.assertEquals("Hello Dominic, Anton, and Long", reader.readLine().split("-")[0].trim());
   }
 
   @Test
@@ -81,8 +82,7 @@ public class ServerTests {
 
     LineNumberReader reader = createReaderAtMarkupLine();
 
-    Assert.assertEquals("Hello Dominic, Anton, Long, and Test - the time on the server is 12 AM on Monday",
-        reader.readLine());
+    Assert.assertEquals("Hello Dominic, Anton, Long, and Test", reader.readLine().split("-")[0].trim());
   }
 
   @Test
@@ -91,7 +91,7 @@ public class ServerTests {
 
     LineNumberReader reader = createReaderAtMarkupLine();
 
-    Assert.assertEquals("Error, persons name already exists!", reader.readLine());
+    Assert.assertEquals("Error, the name you are attempting to add is invalid!", reader.readLine().trim());
   }
 
   @Test
@@ -100,7 +100,7 @@ public class ServerTests {
 
     LineNumberReader reader = createReaderAtMarkupLine();
 
-    Assert.assertEquals("Error, persons new name already exists!", reader.readLine());
+    Assert.assertEquals("Error, the name you are attempting to change too is invalid!", reader.readLine().trim());
   }
 
   @Test
@@ -109,7 +109,7 @@ public class ServerTests {
 
     LineNumberReader reader = createReaderAtMarkupLine();
 
-    Assert.assertEquals("Error, person you want to change does not exist in world!", reader.readLine());
+    Assert.assertEquals("Error, the name you are attempting to change too is invalid!", reader.readLine().trim());
   }
 
   @Test
@@ -118,7 +118,7 @@ public class ServerTests {
 
     LineNumberReader reader = createReaderAtMarkupLine();
 
-    Assert.assertEquals("Error, you can't get rid of Dominic!", reader.readLine());
+    Assert.assertEquals("Error, the name you are attempting to delete is invalid!", reader.readLine().trim());
   }
 
   @Test
@@ -128,7 +128,7 @@ public class ServerTests {
 
     LineNumberReader reader = createReaderAtMarkupLine();
 
-    Assert.assertEquals("Hello Dominic, Long, and Max - the time on the server is 12 AM on Monday", reader.readLine());
+    Assert.assertEquals("Hello Dominic, Long, and Max", reader.readLine().split("-")[0].trim());
   }
 
   @Test
@@ -138,6 +138,6 @@ public class ServerTests {
 
     LineNumberReader reader = createReaderAtMarkupLine();
 
-    Assert.assertEquals("Hello Dominic and Anton - the time on the server is 12 AM on Monday", reader.readLine());
+    Assert.assertEquals("Hello Dominic and Anton", reader.readLine().split("-")[0].trim());
   }
 }
