@@ -4,13 +4,13 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Scanner;
 import java.util.Set;
 
 public class PersonDatabase implements IPersonDatabase {
 
-  private Set<String> people = new HashSet<>();
+  private Set<String> people = new LinkedHashSet<>();
 
   public PersonDatabase() throws FileNotFoundException {
     updateDatabase();

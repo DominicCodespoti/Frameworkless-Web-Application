@@ -60,7 +60,7 @@ public class ServerTests {
     int port = ThreadLocalRandom.current().nextInt(8000, 9000);
     testServer = new Server(new PersonDatabaseStub(), port);
     testServer.start();
-    url = new URL("http://localhost:" + port);
+    url = new URL("http://localhost/index:" + port);
     con = url.openConnection();
   }
 

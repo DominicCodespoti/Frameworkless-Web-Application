@@ -12,7 +12,8 @@ public class Server {
   public Server(IPersonDatabase personDatabase, int port) {
     try {
       httpServer = HttpServer.create(new InetSocketAddress(port), 0);
-      httpServer.createContext("/", new Handler(personDatabase));
+      httpServer.createContext("/index", new IndexHandler(personDatabase));
+      httpServer.createContext("/users", new UserHandler(personDatabase));
       httpServer.setExecutor(null);
     } catch (IOException e) {
       e.printStackTrace();

@@ -5,6 +5,7 @@ import Utilities.RequestValidator;
 import View.OutputGenerator;
 import com.sun.net.httpserver.HttpExchange;
 import java.io.IOException;
+import java.util.Set;
 
 public class PersonDatabaseController {
 
@@ -56,5 +57,9 @@ public class PersonDatabaseController {
         break;
     }
     return output;
+  }
+
+  public Set<String> getUsers(){
+    return personDatabase.getAll();
   }
 }

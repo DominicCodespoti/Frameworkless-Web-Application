@@ -2,28 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c4dac91-ca07-4fef-8f4c-576e65ce7bfe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/View/OutputGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/View/IndexHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/persons.txt" beforeDir="false" afterPath="$PROJECT_DIR$/persons.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/PersonDatabaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/PersonDatabaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/IPersonDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/IPersonDatabase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Model/PersonDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/PersonDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/PersonDatabaseStub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ModelTests/PersonDatabaseStub.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/RequestValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/RequestValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/UserHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ViewTests/ServerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ViewTests/ServerTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -48,7 +33,93 @@
     </projectState>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/View/Server.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="307">
+              <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#540#541#0" expanded="true" />
+                <element signature="e#573#574#0" expanded="true" />
+                <element signature="e#597#598#0" expanded="true" />
+                <element signature="e#630#631#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/persons.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/View/UserHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="22" column="64" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/View/IndexHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Model/PersonDatabase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#687#688#0" expanded="true" />
+                <element signature="e#710#711#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ViewTests/ServerTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="403">
+              <caret line="66" column="8" lean-forward="true" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Controller/PersonDatabaseController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="586">
+              <caret line="61" column="23" lean-forward="true" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1801#1802#0" expanded="true" />
+                <element signature="e#1832#1833#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -81,20 +152,22 @@
         <option value="$PROJECT_DIR$/src/main/java/View/Index.html" />
         <option value="$PROJECT_DIR$/Index.html" />
         <option value="$PROJECT_DIR$/src/main/java/Controller/PersonDatabaseStub.java" />
-        <option value="$PROJECT_DIR$/src/main/java/View/Server.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/Model/PersonDatabaseStub.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/View/Handler.java" />
         <option value="$PROJECT_DIR$/src/main/java/Model/IPersonDatabase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Model/PersonDatabase.java" />
-        <option value="$PROJECT_DIR$/persons.txt" />
         <option value="$PROJECT_DIR$/src/test/java/ModelTests/PersonDatabaseStub.java" />
         <option value="$PROJECT_DIR$/src/main/java/Utilities/RequestValidator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Controller/PersonDatabaseController.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ViewTests/ServerTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/View/HTMLGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/View/OutputGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/PersonDatabaseController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ViewTests/ServerTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/View/Server.java" />
+        <option value="$PROJECT_DIR$/src/main/java/View/UserHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/View/IndexHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Model/PersonDatabase.java" />
+        <option value="$PROJECT_DIR$/persons.txt" />
       </list>
     </option>
   </component>
@@ -252,7 +325,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ServerTests">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="MVC-Web-Server.main" />
@@ -348,9 +421,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ServerTests" />
+        <item itemvalue="Gradle.ServerTests" />
         <item itemvalue="JUnit.ServerTests.testServerRespondsToDeleteRequestWithCorrectData" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Gradle.ServerTests" />
       </list>
     </recent_temporary>
   </component>
@@ -370,32 +443,11 @@
       <workItem from="1570083589230" duration="1035000" />
       <workItem from="1570160031118" duration="6581000" />
       <workItem from="1570397563024" duration="7898000" />
-      <workItem from="1570410642042" duration="273000" />
+      <workItem from="1570410642042" duration="2226000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ServerTests - 2019.10.07 at 11h 02m 18s.xml">
-      <configuration name="ServerTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ServerTests - 2019.10.07 at 11h 03m 22s.xml">
-      <configuration name="ServerTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ServerTests - 2019.10.07 at 11h 04m 00s.xml">
-      <configuration name="ServerTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ServerTests_testServerRespondsToDeleteRequestWithCorrectData - 2019.10.07 at 11h 04m 22s.xml">
-      <configuration name="ServerTests.testServerRespondsToDeleteRequestWithCorrectData" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ServerTests - 2019.10.07 at 11h 05m 24s.xml">
-      <configuration name="ServerTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ServerTests - 2019.10.07 at 11h 05m 45s.xml">
-      <configuration name="ServerTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ServerTests - 2019.10.07 at 12h 02m 15s.xml">
-      <configuration name="ServerTests" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ServerTests - 2019.10.07 at 12h 03m 02s.xml">
       <configuration name="ServerTests" configurationId="JUnit" />
     </history-entry>
@@ -405,12 +457,34 @@
     <history-entry file="ServerTests - 2019.10.07 at 12h 03m 58s.xml">
       <configuration name="ServerTests" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ServerTests - 2019.10.07 at 12h 11m 53s.xml">
+      <configuration name="ServerTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServerTests - 2019.10.07 at 14h 08m 17s.xml">
+      <configuration name="ServerTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServerTests - 2019.10.07 at 14h 08m 43s.xml">
+      <configuration name="ServerTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServerTests - 2019.10.07 at 14h 09m 45s.xml">
+      <configuration name="ServerTests" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="ServerTests - 2019.10.07 at 14h 09m 48s.xml">
+      <configuration name="ServerTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServerTests - 2019.10.07 at 14h 10m 06s.xml">
+      <configuration name="ServerTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServerTests - 2019.10.07 at 14h 10m 26s.xml">
+      <configuration name="ServerTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47879000" />
+    <option name="totallyTimeSpent" value="49832000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="30" y="-1050" width="1860" height="1020" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17912947" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -420,8 +494,8 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32913387" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.38965517" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32873562" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38965517" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -455,7 +529,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Controller/PersonDatabaseController.java</url>
-          <line>49</line>
+          <line>50</line>
           <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
@@ -476,13 +550,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
           <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/View/Index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -550,20 +617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/View/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#540#541#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#597#598#0" expanded="true" />
-            <element signature="e#630#631#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -598,25 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/persons.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/PersonDatabase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1250">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-            <element signature="e#710#711#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ModelTests/PersonDatabaseStub.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -624,36 +658,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#506#507#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/View/Handler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ViewTests/ServerTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-285">
-          <caret line="102" column="85" selection-start-line="102" selection-start-column="85" selection-end-line="102" selection-end-column="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/PersonDatabaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="53" column="54" selection-start-line="53" selection-start-column="54" selection-end-line="53" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -675,6 +679,84 @@
           <folding>
             <element signature="e#319#320#0" expanded="true" />
             <element signature="e#368#369#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/View/Index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/PersonDatabaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="586">
+          <caret line="61" column="23" lean-forward="true" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1801#1802#0" expanded="true" />
+            <element signature="e#1832#1833#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ViewTests/ServerTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="66" column="8" lean-forward="true" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/View/IndexHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/View/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#540#541#0" expanded="true" />
+            <element signature="e#573#574#0" expanded="true" />
+            <element signature="e#597#598#0" expanded="true" />
+            <element signature="e#630#631#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/View/UserHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="22" column="64" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persons.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/PersonDatabase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#687#688#0" expanded="true" />
+            <element signature="e#710#711#0" expanded="true" />
           </folding>
         </state>
       </provider>
