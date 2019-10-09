@@ -1,36 +1,39 @@
-package View;
+package View.Handlers;
 
 import static java.nio.file.Files.readString;
 
 import Controller.PersonDatabaseController;
 import Model.PersonDatabase;
-import Model.Response;
+import View.OutputGenerator;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.nio.file.Paths;
+import java.util.Iterator;
 
-public class IndexHandler implements HttpHandler {
+public class UserHandler implements HttpHandler {
 
   private PersonDatabaseController personDatabaseController;
 
-  public IndexHandler(PersonDatabase personDatabase, OutputGenerator outputGenerator) {
+  public UserHandler(PersonDatabase personDatabase, OutputGenerator outputGenerator) {
     personDatabaseController = new PersonDatabaseController(personDatabase, outputGenerator);
   }
 
   @Override
   public void handle(HttpExchange exchange) throws IOException {
-    byte[] bytes = exchange.getRequestBody().readAllBytes();
-    String[] keyValue = new String(bytes).split("=");
-
+    Iterator iterator = personDatabaseController.getUsers().iterator();
     String output = readString(Paths.get("Index.html"));
-    Response response = personDatabaseController.translateRequestToQuery(exchange, keyValue);
+    StringBuilder response = new StringBuilder();
+                                //Test in general
+    while (iterator.hasNext()){ //</br> test for markup
+      response.append(iterator.next()).append("\n");
+    }
 
     output = output.replace("{{Title}}", "Hello World");
-    output = output.replace("{{Body}}", response.getServerOutput());
+    output = output.replace("{{Body}}", response.toString());
 
-    exchange.sendResponseHeaders(response.getServerStatusCode(), output.getBytes().length);
+    exchange.sendResponseHeaders(200, output.getBytes().length); //Test
     OutputStream os = exchange.getResponseBody();
     os.write(output.getBytes());
     os.close();
