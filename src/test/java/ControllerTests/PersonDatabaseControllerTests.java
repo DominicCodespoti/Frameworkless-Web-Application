@@ -1,7 +1,11 @@
 package ControllerTests;
 
+import Model.PersonDatabase;
+import Model.LocalPersonDatabase;
 import ModelTests.PersonDatabaseStub;
+import View.OutputGenerator;
 import View.Server;
+import View.WebPageOutputGenerator;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.LineNumberReader;
@@ -58,7 +62,9 @@ public class PersonDatabaseControllerTests {
   @Before
   public void initalizeTests() throws IOException {
     int port = ThreadLocalRandom.current().nextInt(8000, 9000);
-    testServer = new Server(new PersonDatabaseStub(), port);
+    PersonDatabase personDatabase = new PersonDatabaseStub();
+    OutputGenerator outputGenerator = new WebPageOutputGenerator();
+    testServer = new Server(personDatabase, outputGenerator, port);
     testServer.start();
     url = new URL("http://localhost:" + port + "/index");
     con = url.openConnection();

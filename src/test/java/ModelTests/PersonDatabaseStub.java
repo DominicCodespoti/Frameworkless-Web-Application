@@ -1,12 +1,10 @@
 package ModelTests;
 
-import Model.IPersonDatabase;
-import java.io.IOException;
-import java.util.HashSet;
+import Model.PersonDatabase;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-public class PersonDatabaseStub implements IPersonDatabase {
+public class PersonDatabaseStub implements PersonDatabase {
 
   private Set<String> people = new LinkedHashSet<>();
 
@@ -17,7 +15,7 @@ public class PersonDatabaseStub implements IPersonDatabase {
   }
 
   @Override
-  public void updateDatabase() {
+  public void getFromDatabase() {
 
   }
 

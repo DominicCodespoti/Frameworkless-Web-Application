@@ -1,6 +1,6 @@
 package View;
 
-import Model.IPersonDatabase;
+import Model.PersonDatabase;
 import com.sun.net.httpserver.HttpServer;
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -9,11 +9,11 @@ public class Server {
 
   private HttpServer httpServer;
 
-  public Server(IPersonDatabase personDatabase, int port) {
+  public Server(PersonDatabase personDatabase, OutputGenerator outputGenerator, int port) {
     try {
       httpServer = HttpServer.create(new InetSocketAddress(port), 0);
-      httpServer.createContext("/index", new IndexHandler(personDatabase));
-      httpServer.createContext("/users", new UserHandler(personDatabase));
+      httpServer.createContext("/index", new IndexHandler(personDatabase, outputGenerator));
+      httpServer.createContext("/users", new UserHandler(personDatabase, outputGenerator));
       httpServer.setExecutor(null);
     } catch (IOException e) {
       e.printStackTrace();

@@ -2,15 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c4dac91-ca07-4fef-8f4c-576e65ce7bfe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/LocalPersonDatabase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/DateTimeGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/View/WebPageOutputGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/Index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/persons.txt" beforeDir="false" afterPath="$PROJECT_DIR$/persons.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/PersonDatabaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/PersonDatabaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/IPersonDatabase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/PersonDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/PersonDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/IndexHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/IndexHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/OutputGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/OutputGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/UserHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/UserHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ControllerTests/PersonDatabaseControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ControllerTests/PersonDatabaseControllerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ModelTests/PersonDatabaseStub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ModelTests/PersonDatabaseStub.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ViewTests/OutputGeneratorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ViewTests/OutputGeneratorTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -35,29 +54,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Controller/PersonDatabaseController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="64" column="49" selection-start-line="64" selection-start-column="49" selection-end-line="64" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Index.html">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Model/Response.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="75">
+              <caret line="3" column="30" lean-forward="true" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+              <folding>
+                <element signature="e#144#145#0" expanded="true" />
+                <element signature="e#179#180#0" expanded="true" />
+                <element signature="e#217#218#0" expanded="true" />
+                <element signature="e#247#248#0" expanded="true" />
+                <element signature="e#303#304#0" expanded="true" />
+                <element signature="e#347#348#0" expanded="true" />
+                <element signature="e#410#411#0" expanded="true" />
+                <element signature="e#464#465#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/style.css">
+        <entry file="file://$PROJECT_DIR$/src/main/java/View/IndexHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
-              <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+            <state relative-caret-position="224">
+              <caret line="27" column="91" selection-start-line="27" selection-start-column="91" selection-end-line="27" selection-end-column="91" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/View/UserHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="142">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -71,9 +115,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -98,28 +142,32 @@
         <option value="$PROJECT_DIR$/src/main/java/Controller/IPersonDatabaseController.java" />
         <option value="$PROJECT_DIR$/src/main/java/View/Index.html" />
         <option value="$PROJECT_DIR$/src/main/java/Controller/PersonDatabaseStub.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/Model/PersonDatabaseStub.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/View/Handler.java" />
         <option value="$PROJECT_DIR$/src/main/java/Model/IPersonDatabase.java" />
         <option value="$PROJECT_DIR$/src/main/java/Utilities/RequestValidator.java" />
         <option value="$PROJECT_DIR$/src/main/java/View/HTMLGenerator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Controller/PersonDatabaseController.java" />
         <option value="$PROJECT_DIR$/src/test/java/ViewTests/ServerTests.java" />
-        <option value="$PROJECT_DIR$/src/main/java/View/Server.java" />
-        <option value="$PROJECT_DIR$/src/main/java/View/UserHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/View/IndexHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Model/PersonDatabase.java" />
         <option value="$PROJECT_DIR$/src/test/java/ViewTests/OutputGeneratorTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ControllerTests/PersonDatabaseControllerTests.java" />
-        <option value="$PROJECT_DIR$/persons.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/View/OutputGenerator.java" />
         <option value="$PROJECT_DIR$/src/test/java/ModelTests/PersonDatabaseStub.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ViewTests/OutputGeneratorTests.java" />
         <option value="$PROJECT_DIR$/src/style.css" />
-        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/Index.html" />
+        <option value="$PROJECT_DIR$/persons.txt" />
+        <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/src/main/java/Utilities/DateTimeGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Utilities/Constants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Model/PersonDatabase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/View/OutputGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/View/Server.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ControllerTests/PersonDatabaseControllerTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ViewTests/OutputGeneratorTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/View/WebPageOutputGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/View/UserHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/PersonDatabaseController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/View/IndexHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Model/Response.java" />
       </list>
     </option>
   </component>
@@ -135,6 +183,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -147,12 +197,68 @@
               <item name="MVC-Web-Server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="MVC-Web-Server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MVC-Web-Server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="MVC-Web-Server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MVC-Web-Server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MVC-Web-Server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MVC-Web-Server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MVC-Web-Server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MVC-Web-Server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MVC-Web-Server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MVC-Web-Server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Utilities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MVC-Web-Server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MVC-Web-Server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="View" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MVC-Web-Server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MVC-Web-Server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="MVC-Web-Server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MVC-Web-Server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -170,9 +276,8 @@
     <property name="settings.editor.selected.configurable" value="liveEdit" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="Model" />
-      <recent name="Controller" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -180,8 +285,10 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Utilities" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Model" />
+      <recent name="View" />
+      <recent name="Controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -331,32 +438,12 @@
       <workItem from="1570420485072" duration="1224000" />
       <workItem from="1570421728586" duration="445000" />
       <workItem from="1570422196493" duration="2442000" />
-      <workItem from="1570427640716" duration="2317000" />
+      <workItem from="1570427640716" duration="4680000" />
+      <workItem from="1570572818390" duration="4504000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_MVC-Web-Server_test - 2019.10.07 at 14h 46m 56s.xml">
-      <configuration name="All in MVC-Web-Server.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_MVC-Web-Server_test - 2019.10.07 at 14h 47m 00s.xml">
-      <configuration name="All in MVC-Web-Server.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_MVC-Web-Server_test - 2019.10.07 at 14h 47m 04s.xml">
-      <configuration name="All in MVC-Web-Server.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_MVC-Web-Server_test - 2019.10.07 at 14h 48m 51s.xml">
-      <configuration name="All in MVC-Web-Server.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_MVC-Web-Server_test - 2019.10.07 at 14h 48m 56s.xml">
-      <configuration name="All in MVC-Web-Server.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_MVC-Web-Server_test - 2019.10.07 at 14h 50m 47s.xml">
-      <configuration name="All in MVC-Web-Server.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_MVC-Web-Server_test - 2019.10.07 at 14h 51m 04s.xml">
-      <configuration name="All in MVC-Web-Server.test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_MVC-Web-Server_test - 2019.10.07 at 14h 53m 08s.xml">
       <configuration name="All in MVC-Web-Server.test" configurationId="JUnit" />
     </history-entry>
@@ -366,15 +453,36 @@
     <history-entry file="All_in_MVC-Web-Server_test - 2019.10.07 at 17h 30m 44s.xml">
       <configuration name="All in MVC-Web-Server.test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_MVC-Web-Server_test - 2019.10.07 at 17h 32m 46s.xml">
+      <configuration name="All in MVC-Web-Server.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_MVC-Web-Server_test - 2019.10.07 at 17h 43m 11s.xml">
+      <configuration name="All in MVC-Web-Server.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_MVC-Web-Server_test - 2019.10.07 at 17h 43m 42s.xml">
+      <configuration name="All in MVC-Web-Server.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_MVC-Web-Server_test - 2019.10.09 at 10h 37m 21s.xml">
+      <configuration name="All in MVC-Web-Server.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_MVC-Web-Server_test - 2019.10.09 at 10h 40m 53s.xml">
+      <configuration name="All in MVC-Web-Server.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_MVC-Web-Server_test - 2019.10.09 at 10h 42m 09s.xml">
+      <configuration name="All in MVC-Web-Server.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_MVC-Web-Server_test - 2019.10.09 at 10h 43m 22s.xml">
+      <configuration name="All in MVC-Web-Server.test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57184000" />
+    <option name="totallyTimeSpent" value="64051000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="30" y="-1050" width="1860" height="1020" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19252232" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25279018" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -383,13 +491,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32873562" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38965517" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.38965517" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
-      <window_info anchor="bottom" id="Build" order="8" weight="0.35119048" />
+      <window_info anchor="bottom" id="Build" order="8" weight="0.3505747" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="CheckStyle" order="11" weight="0.32777777" />
@@ -417,15 +525,17 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Controller/PersonDatabaseController.java</url>
-          <line>50</line>
+          <line>54</line>
           <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/View/OutputGenerator.java</url>
-          <line>26</line>
-          <properties />
-          <option name="timeStamp" value="9" />
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/View/WebPageOutputGenerator.java</url>
+          <line>16</line>
+          <properties class="View.WebPageOutputGenerator" method="getOutputGenerator">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -511,69 +621,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/View/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#540#541#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#597#598#0" expanded="true" />
-            <element signature="e#630#631#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/View/UserHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="22" column="64" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/PersonDatabase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-            <element signature="e#710#711#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/persons.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/View/IndexHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Utilities/RequestValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#368#369#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ModelTests/PersonDatabaseStub.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="620">
@@ -590,10 +637,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ControllerTests/PersonDatabaseControllerTests.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/View/Index.html" />
+    <entry file="file://$PROJECT_DIR$/persons.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="62" column="57" selection-start-line="62" selection-start-column="57" selection-end-line="62" selection-end-column="57" />
+        <state relative-caret-position="50">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/PersonDatabase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Utilities/RequestValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#368#369#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/View/OutputGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/View/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="80" selection-start-line="11" selection-start-column="80" selection-end-line="11" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/LocalPersonDatabase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="978">
+          <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/View/WebPageOutputGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="34" column="3" lean-forward="true" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -602,46 +728,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ViewTests/OutputGeneratorTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="84" column="55" selection-start-line="84" selection-start-column="55" selection-end-line="84" selection-end-column="55" />
+        <state relative-caret-position="228">
+          <caret line="65" column="42" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/IPersonDatabase.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ControllerTests/PersonDatabaseControllerTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        <state relative-caret-position="260">
+          <caret line="69" column="31" lean-forward="true" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2375#2376#0" expanded="true" />
+            <element signature="e#2402#2403#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/PersonDatabaseController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Utilities/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1075">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="3" column="47" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/View/Index.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/View/OutputGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Utilities/DateTimeGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
@@ -651,17 +765,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/PersonDatabaseController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+        <state relative-caret-position="255">
+          <caret line="64" column="49" selection-start-line="64" selection-start-column="49" selection-end-line="64" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Index.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/View/UserHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="142">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/View/IndexHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="27" column="91" selection-start-line="27" selection-start-column="91" selection-end-line="27" selection-end-column="91" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/Response.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="30" lean-forward="true" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+          <folding>
+            <element signature="e#144#145#0" expanded="true" />
+            <element signature="e#179#180#0" expanded="true" />
+            <element signature="e#217#218#0" expanded="true" />
+            <element signature="e#247#248#0" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#410#411#0" expanded="true" />
+            <element signature="e#464#465#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

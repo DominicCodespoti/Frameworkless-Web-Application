@@ -1,6 +1,7 @@
 package Controller;
 
-import Model.IPersonDatabase;
+import Model.PersonDatabase;
+import Model.Response;
 import Utilities.RequestValidator;
 import View.OutputGenerator;
 import com.sun.net.httpserver.HttpExchange;
@@ -9,16 +10,19 @@ import java.util.Set;
 
 public class PersonDatabaseController {
 
-  private IPersonDatabase personDatabase;
+  private PersonDatabase personDatabase;
+  private OutputGenerator outputGenerator;
 
-  public PersonDatabaseController(IPersonDatabase personDatabase) {
+  public PersonDatabaseController(PersonDatabase personDatabase, OutputGenerator outputGenerator) {
     this.personDatabase = personDatabase;
+    this.outputGenerator = outputGenerator;
   }
 
-  public String translateRequestToQuery(HttpExchange exchange, String[] arguments) throws IOException {
+  public Response translateRequestToQuery(HttpExchange exchange, String[] arguments) throws IOException {
     String key = "";
     String value = "";
     String output = "Error, request failed!";
+    int statusCode = 200;
 
     if (arguments.length == 2) {
       key = arguments[0];
@@ -29,37 +33,40 @@ public class PersonDatabaseController {
 
     switch (exchange.getRequestMethod()) {
       case "GET":
-        output = OutputGenerator.getOutputGenerator(personDatabase.getAll());
+        output = outputGenerator.getOutputGenerator(personDatabase.getAll());
         break;
       case "POST":
         if (RequestValidator.isValid(value, personDatabase.getAll())) {
           personDatabase.add(value);
-          output = OutputGenerator.postOutput();
+          output = outputGenerator.postOutput();
         } else {
-          output = OutputGenerator.postErrorOutput();
+          output = outputGenerator.postErrorOutput();
         }
         break;
       case "PUT":
         if (RequestValidator.isValid(value, personDatabase.getAll())) {
           personDatabase.change(key, value);
-          output = OutputGenerator.putOutput();
+          output = outputGenerator.putOutput();
         } else {
-          output = OutputGenerator.putErrorOutput();
+          output = outputGenerator.putErrorOutput();
         }
         break;
       case "DELETE":
         if (RequestValidator.isPersonImportant(value)) {
           personDatabase.remove(value);
-          output = OutputGenerator.deleteOutput();
+          output = outputGenerator.deleteOutput();
         } else {
-          output = OutputGenerator.deleteErrorOutput();
+          output = outputGenerator.deleteErrorOutput();
         }
         break;
     }
-    return output;
+    Response serverResponse = new Response();
+    serverResponse.setServerOutput(output);
+    serverResponse.setServerStatusCode(statusCode);
+    return serverResponse;
   }
 
-  public Set<String> getUsers(){
+  public Set<String> getUsers() {
     return personDatabase.getAll();
   }
 }

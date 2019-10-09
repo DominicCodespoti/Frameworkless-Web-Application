@@ -3,7 +3,7 @@ package View;
 import static java.nio.file.Files.readString;
 
 import Controller.PersonDatabaseController;
-import Model.IPersonDatabase;
+import Model.PersonDatabase;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
 import java.io.IOException;
@@ -15,8 +15,8 @@ public class UserHandler implements HttpHandler {
 
   private PersonDatabaseController personDatabaseController;
 
-  public UserHandler(IPersonDatabase personDatabase) {
-    personDatabaseController = new PersonDatabaseController(personDatabase);
+  UserHandler(PersonDatabase personDatabase, OutputGenerator outputGenerator) {
+    personDatabaseController = new PersonDatabaseController(personDatabase, outputGenerator);
   }
 
   @Override
@@ -31,7 +31,6 @@ public class UserHandler implements HttpHandler {
 
     output = output.replace("{{Title}}", "Hello World");
     output = output.replace("{{Body}}", response.toString());
-
 
     exchange.sendResponseHeaders(200, output.getBytes().length);
     OutputStream os = exchange.getResponseBody();
