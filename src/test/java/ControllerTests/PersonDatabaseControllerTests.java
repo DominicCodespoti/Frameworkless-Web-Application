@@ -64,7 +64,7 @@ public class PersonDatabaseControllerTests {
     int port = ThreadLocalRandom.current().nextInt(8000, 9000);
     PersonDatabase personDatabase = new PersonDatabaseStub();
     OutputGenerator outputGenerator = new WebPageOutputGenerator();
-    testServer = new Server(personDatabase, outputGenerator, port);
+    testServer = new Server(personDatabase, outputGenerator, port, "localhost");
     testServer.start();
     url = new URL("http://localhost:" + port + "/index");
     con = url.openConnection();
@@ -91,7 +91,7 @@ public class PersonDatabaseControllerTests {
     Assert.assertEquals("Hello Dominic, Anton, Long, and Test", reader.readLine().split("-")[0].trim());
   }
 
-  @Test
+  @Test (expected = IOException.class)
   public void testServerRefusesPostRequestIfNameIsAlreadyPresent() throws IOException {
     sendRequest("", "Dominic", "POST", con);
 
@@ -100,7 +100,7 @@ public class PersonDatabaseControllerTests {
     Assert.assertEquals("Error, the name you are attempting to add is invalid!", reader.readLine().trim());
   }
 
-  @Test
+  @Test (expected = IOException.class)
   public void testServerRefusesPutRequestIfNewNameIsTaken() throws IOException {
     sendRequest("Anton", "Dominic", "PUT", con);
 
@@ -109,7 +109,7 @@ public class PersonDatabaseControllerTests {
     Assert.assertEquals("Error, the name you are attempting to change too is invalid!", reader.readLine().trim());
   }
 
-  @Test
+  @Test (expected = IOException.class)
   public void testServerRefusesPutRequestIfOldNameIsNotPresent() throws IOException {
     sendRequest("Mitch", "Dominic", "PUT", con);
 
@@ -118,7 +118,7 @@ public class PersonDatabaseControllerTests {
     Assert.assertEquals("Error, the name you are attempting to change too is invalid!", reader.readLine().trim());
   }
 
-  @Test
+  @Test (expected = IOException.class)
   public void testServerRefusesDeleteRequestIfNameIsDominic() throws IOException {
     sendRequest("", "Dominic", "DELETE", con);
 

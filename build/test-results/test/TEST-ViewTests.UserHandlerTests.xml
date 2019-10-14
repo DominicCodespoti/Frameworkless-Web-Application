@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ViewTests.UserHandlerTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-10-14T04:28:48" hostname="C02Y308YJG5J" time="0.005">
+  <properties/>
+  <testcase name="userContextReturnsAllNamesCurrentlyInServer" classname="ViewTests.UserHandlerTests" time="0.005"/>
+  <system-out><![CDATA[localhost:8179
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

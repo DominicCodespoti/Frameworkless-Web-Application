@@ -22,6 +22,7 @@ public class IndexHandler implements HttpHandler {
 
   @Override
   public void handle(HttpExchange exchange) throws IOException {
+
     byte[] bytes = exchange.getRequestBody().readAllBytes();
     String[] keyValue = new String(bytes).split("=");
 
@@ -33,6 +34,7 @@ public class IndexHandler implements HttpHandler {
 
     exchange.sendResponseHeaders(response.getServerStatusCode(), output.getBytes().length);
     OutputStream os = exchange.getResponseBody();
+
     os.write(output.getBytes());
     os.close();
   }

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ViewTests.OutputGeneratorTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-10-14T04:28:48" hostname="C02Y308YJG5J" time="0.023">
+  <properties/>
+  <testcase name="testOutputGeneratesCorrectGreetingForThreePeople" classname="ViewTests.OutputGeneratorTests" time="0.003"/>
+  <testcase name="testOutputGeneratesCorrectGreetingForFourPeople" classname="ViewTests.OutputGeneratorTests" time="0.004"/>
+  <testcase name="testOutputGeneratesCorrectGreetingForTwoPeople" classname="ViewTests.OutputGeneratorTests" time="0.011"/>
+  <testcase name="testOutputGeneratesCorrectGreetingForOnePerson" classname="ViewTests.OutputGeneratorTests" time="0.005"/>
+  <system-out><![CDATA[localhost:8365
+localhost:8893
+localhost:8745
+localhost:8342
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

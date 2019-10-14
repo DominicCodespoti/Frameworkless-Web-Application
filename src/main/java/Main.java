@@ -9,7 +9,7 @@ public class Main {
   public static void main(String[] args) throws Exception {
     PersonDatabase personDatabase = new LocalPersonDatabase();
     OutputGenerator outputGenerator = new WebPageOutputGenerator();
-    Server server = new Server(personDatabase, outputGenerator, 8080);
+    Server server = new Server(personDatabase, outputGenerator, 8080, args[0]);
     server.start();
   }
 }

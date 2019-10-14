@@ -19,7 +19,9 @@ public class LocalPersonDatabase implements PersonDatabase {
   @Override
   public void getFromDatabase() throws FileNotFoundException {
     people.clear();
-    Scanner currentPerson = new Scanner(new File("persons.txt"));
+    File directory = new File("persons.txt");
+    Scanner currentPerson = new Scanner(directory);
+
     while (currentPerson.hasNext()) {
       people.add(currentPerson.next());
     }

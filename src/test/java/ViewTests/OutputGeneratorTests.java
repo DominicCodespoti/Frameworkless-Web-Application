@@ -63,7 +63,7 @@ public class OutputGeneratorTests {
     int port = ThreadLocalRandom.current().nextInt(8000, 9000);
     PersonDatabase personDatabase = new PersonDatabaseStub();
     OutputGenerator outputGenerator = new WebPageOutputGenerator();
-    testServer = new Server(personDatabase, outputGenerator, port);
+    testServer = new Server(personDatabase, outputGenerator, port, "localhost");
     testServer.start();
     url = new URL("http://localhost:" + port + "/index");
     con = url.openConnection();

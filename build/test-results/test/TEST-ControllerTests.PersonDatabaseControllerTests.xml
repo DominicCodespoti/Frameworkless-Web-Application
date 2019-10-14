@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ControllerTests.PersonDatabaseControllerTests" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-10-14T04:28:48" hostname="C02Y308YJG5J" time="0.15">
+  <properties/>
+  <testcase name="testServerRespondsToGetRequestWithCorrectData" classname="ControllerTests.PersonDatabaseControllerTests" time="0.121"/>
+  <testcase name="testServerRefusesDeleteRequestIfNameIsDominic" classname="ControllerTests.PersonDatabaseControllerTests" time="0.004"/>
+  <testcase name="testServerRefusesPutRequestIfNewNameIsTaken" classname="ControllerTests.PersonDatabaseControllerTests" time="0.006"/>
+  <testcase name="testServerRespondsToPutRequestWithCorrectData" classname="ControllerTests.PersonDatabaseControllerTests" time="0.004"/>
+  <testcase name="testServerRespondsToPostRequestWithCorrectData" classname="ControllerTests.PersonDatabaseControllerTests" time="0.004"/>
+  <testcase name="testServerRefusesPutRequestIfOldNameIsNotPresent" classname="ControllerTests.PersonDatabaseControllerTests" time="0.003"/>
+  <testcase name="testServerRespondsToDeleteRequestWithCorrectData" classname="ControllerTests.PersonDatabaseControllerTests" time="0.004"/>
+  <testcase name="testServerRefusesPostRequestIfNameIsAlreadyPresent" classname="ControllerTests.PersonDatabaseControllerTests" time="0.003"/>
+  <system-out><![CDATA[localhost:8532
+localhost:8550
+localhost:8856
+localhost:8723
+localhost:8922
+localhost:8491
+localhost:8339
+localhost:8618
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
